@@ -6,6 +6,7 @@ using Windows.UI.Xaml.Input;
 
 using System.Diagnostics;
 using Windows.UI.Input;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace EyeMuscle
 {
@@ -128,17 +129,24 @@ namespace EyeMuscle
         {
             switch (args.KeyCode)
             {
-                case (uint)(Windows.System.VirtualKey.Space):
+                case (uint)Windows.System.VirtualKey.Space:
                     ToggleZooming();
                     break;
-                case (uint)(Windows.System.VirtualKey.Number1):
+                case (uint)Windows.System.VirtualKey.Number1:
                     speed = 1d;
                     break;
-                case (uint)(Windows.System.VirtualKey.Number2):
+                case (uint)Windows.System.VirtualKey.Number2:
                     speed = 2d;
                     break;
-                case (uint)(Windows.System.VirtualKey.Number3):
+                case (uint)Windows.System.VirtualKey.Number3:
                     speed = 3d;
+                    break;
+                case (uint)Windows.System.VirtualKey.A:
+
+                    MainImage.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/image2.jpg"));
+                    break;
+                case (uint)Windows.System.VirtualKey.B:
+                    MainImage.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/image1.jpg"));
                     break;
             }
             if (args.KeyCode == 27) //Escape

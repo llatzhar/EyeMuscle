@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="a0e26636-2260-4002-8084-1ab2207bf0a3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>EyeMuscle</DisplayName>
-    <PublisherDisplayName>yamamoto</PublisherDisplayName>
+    <PublisherDisplayName>llatzhar</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -22,7 +22,4 @@
       </uap:VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>
